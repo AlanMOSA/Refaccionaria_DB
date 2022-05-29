@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e2e42f57150d459e9582d4f0602aec81" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="RefaccionariaModel.Accesorio" Width="1.5" PointX="3" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Asentamiento" Width="1.5" PointX="5.25" PointY="81.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.AutoParte" Width="1.5" PointX="5.25" PointY="86.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.AutoparteSucursal" Width="1.5" PointX="13.5" PointY="82.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Cliente" Width="1.5" PointX="3" PointY="42.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.ClienteCompra" Width="1.5" PointX="5.25" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.ClienteProducto" Width="1.5" PointX="5.25" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.ClienteSucursal" Width="1.5" PointX="5.25" PointY="73.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Compra" Width="1.5" PointX="8.25" PointY="67.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Descuento" Width="1.5" PointX="8" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Empleado" Width="1.5" PointX="3" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.EmpleadoProducto" Width="1.5" PointX="8.25" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.EquipoComputo" Width="1.5" PointX="3" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Estado" Width="1.5" PointX="3" PointY="66.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Factura" Width="1.5" PointX="3" PointY="70.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.FormaPago" Width="1.5" PointX="3" PointY="74.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Marca" Width="1.5" PointX="3" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Moviliario" Width="1.5" PointX="3" PointY="82.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Municipio" Width="1.5" PointX="11.25" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Producto" Width="1.5" PointX="3" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.ProductoCompra" Width="1.5" PointX="13.5" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.ProductoVenta" Width="1.5" PointX="16.5" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Proveedor" Width="1.5" PointX="3" PointY="90.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Publicidad" Width="1.5" PointX="3" PointY="95.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Quimicos" Width="1.5" PointX="3" PointY="99.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.QuimicosSucursal" Width="1.5" PointX="14.25" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Sucursal" Width="1.5" PointX="3" PointY="103" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalAccesorio" Width="1.5" PointX="5.25" PointY="67.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalEmpleado" Width="1.5" PointX="8.25" PointY="77.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalEquipoComputo" Width="1.5" PointX="8.25" PointY="82.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalEstado" Width="1.5" PointX="11.25" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalMoviliario" Width="1.5" PointX="11.25" PointY="83.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalProveedor" Width="1.5" PointX="8.25" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.SucursalPublicidad" Width="1.5" PointX="11.25" PointY="88.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.TipoAsentamiento" Width="1.5" PointX="3" PointY="108.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.TipoAsentamientoZona" Width="1.5" PointX="5.25" PointY="91.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.TipoAutoparte" Width="1.5" PointX="3" PointY="112.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.TipoEmpleado" Width="1.5" PointX="10.25" PointY="61.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.TipoProveedor" Width="1.5" PointX="14.25" PointY="76.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Usuario" Width="1.5" PointX="0.75" PointY="55.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Venta" Width="1.5" PointX="11.25" PointY="70.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.VentaEmpleado" Width="1.5" PointX="8.25" PointY="57.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RefaccionariaModel.Zona" Width="1.5" PointX="3" PointY="116.25" IsExpanded="true" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AccesorioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AccesorioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalAccesorioAccesorio" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AsentamientoMunicipio" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AsentamientoTipoAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AsentamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AsentamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteMarca" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteSucursalAutoparte" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteTipoAutoparte" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteSucursalSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteSucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_AutoparteSucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteCompraCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteProductoCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteSucursalCliente" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteCompraCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteCompraUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteCompraUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteProductoProducto" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteProductoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteProductoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteSucursalSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteSucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ClienteSucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_CompraFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_CompraFormaPago" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_CompraUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_CompraUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoCompraCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_DescuentoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_DescuentoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_DescuentoVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoProductoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEmpleadoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoEmpleadoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaEmpleadoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoProductoProducto" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoProductoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EmpleadoProductoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EquipoComputoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EquipoComputoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEquipoComputoEquipoComputo" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EstadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_EstadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MunicipioEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEstadoEstado" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_FacturaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_FacturaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_FormaPagoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_FormaPagoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaFormaPago" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MarcaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MarcaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MoviliarioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MoviliarioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalMoviliarioMoviliario" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MunicipioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_MunicipioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoCompraProducto" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoVentaProducto" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoCompraUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoCompraUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoVentaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoVentaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProductoVentaVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProveedorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ProveedorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalProveedorProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoProveedorProveedor" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_PublicidadUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_PublicidadUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalPublicidadPublicidad" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosSucursalQuimicos" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosSucursalSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosSucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_QuimicosSucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalAccesorioSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEmpleadoSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEquipoComputoSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEstadoSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalMoviliarioSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalProveedorSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalPublicidadSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalAccesorioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalAccesorioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEquipoComputoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEquipoComputoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEstadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalEstadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalMoviliarioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalMoviliarioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalProveedorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalProveedorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalPublicidadUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_SucursalPublicidadUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoZonaTipoAsentamiento" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoZonaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoZonaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAsentamientoZonaZona" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAutoparteUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoAutoparteUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoProveedorUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_TipoProveedorUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaEmpleadoUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaEmpleadoUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ZonaUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_ZonaUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FKUsuarioUsuarioCrea" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FKUsuarioUsuarioModifica" ManuallyRouted="false" />
+        <AssociationConnector Association="RefaccionariaModel.FK_VentaEmpleadoVenta" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
