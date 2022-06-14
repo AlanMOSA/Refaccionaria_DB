@@ -1,0 +1,631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RefaccionariaModelStoreContainer" CdmEntityContainer="RefaccionariaEntities">
+    <EntitySetMapping Name="Accesorio">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Accesorio">
+        <MappingFragment StoreEntitySet="Accesorio">
+          <ScalarProperty Name="idAccesorio" ColumnName="idAccesorio" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Asentamiento">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Asentamiento">
+        <MappingFragment StoreEntitySet="Asentamiento">
+          <ScalarProperty Name="idAsentamiento" ColumnName="idAsentamiento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="codigoPostal" ColumnName="codigoPostal" />
+          <ScalarProperty Name="idMunicipio" ColumnName="idMunicipio" />
+          <ScalarProperty Name="idTipoAsentamiento" ColumnName="idTipoAsentamiento" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoParte">
+      <EntityTypeMapping TypeName="RefaccionariaModel.AutoParte">
+        <MappingFragment StoreEntitySet="AutoParte">
+          <ScalarProperty Name="idAutoParte" ColumnName="idAutoParte" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="idTipoAutoparte" ColumnName="idTipoAutoparte" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoparteSucursal">
+      <EntityTypeMapping TypeName="RefaccionariaModel.AutoparteSucursal">
+        <MappingFragment StoreEntitySet="AutoparteSucursal">
+          <ScalarProperty Name="idAutoparteSucursal" ColumnName="idAutoparteSucursal" />
+          <ScalarProperty Name="idAutoparte" ColumnName="idAutoparte" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="idTipoCliente" ColumnName="idTipoCliente" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteCompra">
+      <EntityTypeMapping TypeName="RefaccionariaModel.ClienteCompra">
+        <MappingFragment StoreEntitySet="ClienteCompra">
+          <ScalarProperty Name="idClienteCompra" ColumnName="idClienteCompra" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idCompra" ColumnName="idCompra" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteProducto">
+      <EntityTypeMapping TypeName="RefaccionariaModel.ClienteProducto">
+        <MappingFragment StoreEntitySet="ClienteProducto">
+          <ScalarProperty Name="idClienteProducto" ColumnName="idClienteProducto" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClienteSucursal">
+      <EntityTypeMapping TypeName="RefaccionariaModel.ClienteSucursal">
+        <MappingFragment StoreEntitySet="ClienteSucursal">
+          <ScalarProperty Name="idClienteSucursal" ColumnName="idClienteSucursal" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Compra">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Compra">
+        <MappingFragment StoreEntitySet="Compra">
+          <ScalarProperty Name="idCompra" ColumnName="idCompra" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="detalles" ColumnName="detalles" />
+          <ScalarProperty Name="idFormaPago" ColumnName="idFormaPago" />
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Descuento">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Descuento">
+        <MappingFragment StoreEntitySet="Descuento">
+          <ScalarProperty Name="idDescuento" ColumnName="idDescuento" />
+          <ScalarProperty Name="fechalimite" ColumnName="fechalimite" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="detalles" ColumnName="detalles" />
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="NSS" ColumnName="NSS" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpleadoProducto">
+      <EntityTypeMapping TypeName="RefaccionariaModel.EmpleadoProducto">
+        <MappingFragment StoreEntitySet="EmpleadoProducto">
+          <ScalarProperty Name="idEmpleadoProducto" ColumnName="idEmpleadoProducto" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipoComputo">
+      <EntityTypeMapping TypeName="RefaccionariaModel.EquipoComputo">
+        <MappingFragment StoreEntitySet="EquipoComputo">
+          <ScalarProperty Name="idEquipoComputo" ColumnName="idEquipoComputo" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="marca" ColumnName="marca" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Factura">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Factura">
+        <MappingFragment StoreEntitySet="Factura">
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="detalles" ColumnName="detalles" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormaPago">
+      <EntityTypeMapping TypeName="RefaccionariaModel.FormaPago">
+        <MappingFragment StoreEntitySet="FormaPago">
+          <ScalarProperty Name="idFormaPago" ColumnName="idFormaPago" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marca">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Marca">
+        <MappingFragment StoreEntitySet="Marca">
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Moviliario">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Moviliario">
+        <MappingFragment StoreEntitySet="Moviliario">
+          <ScalarProperty Name="idMoviliario" ColumnName="idMoviliario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Municipio">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Municipio">
+        <MappingFragment StoreEntitySet="Municipio">
+          <ScalarProperty Name="idMunicipio" ColumnName="idMunicipio" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductoCompra">
+      <EntityTypeMapping TypeName="RefaccionariaModel.ProductoCompra">
+        <MappingFragment StoreEntitySet="ProductoCompra">
+          <ScalarProperty Name="idProductoCompra" ColumnName="idProductoCompra" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="idCompra" ColumnName="idCompra" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductoVenta">
+      <EntityTypeMapping TypeName="RefaccionariaModel.ProductoVenta">
+        <MappingFragment StoreEntitySet="ProductoVenta">
+          <ScalarProperty Name="idProductoVenta" ColumnName="idProductoVenta" />
+          <ScalarProperty Name="idProducto" ColumnName="idProducto" />
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedor">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Proveedor">
+        <MappingFragment StoreEntitySet="Proveedor">
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="RFC" ColumnName="RFC" />
+          <ScalarProperty Name="NSS" ColumnName="NSS" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publicidad">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Publicidad">
+        <MappingFragment StoreEntitySet="Publicidad">
+          <ScalarProperty Name="idPublicidad" ColumnName="idPublicidad" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Quimicos">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Quimicos">
+        <MappingFragment StoreEntitySet="Quimicos">
+          <ScalarProperty Name="idQuimicos" ColumnName="idQuimicos" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuimicosSucursal">
+      <EntityTypeMapping TypeName="RefaccionariaModel.QuimicosSucursal">
+        <MappingFragment StoreEntitySet="QuimicosSucursal">
+          <ScalarProperty Name="idQuimicosSucursal" ColumnName="idQuimicosSucursal" />
+          <ScalarProperty Name="idQuimicos" ColumnName="idQuimicos" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sucursal">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Sucursal">
+        <MappingFragment StoreEntitySet="Sucursal">
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalAccesorio">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalAccesorio">
+        <MappingFragment StoreEntitySet="SucursalAccesorio">
+          <ScalarProperty Name="idSucursalAccesorio" ColumnName="idSucursalAccesorio" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idAccesorio" ColumnName="idAccesorio" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalEmpleado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalEmpleado">
+        <MappingFragment StoreEntitySet="SucursalEmpleado">
+          <ScalarProperty Name="idSucursalEmpleado" ColumnName="idSucursalEmpleado" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="fechaIngreso" ColumnName="fechaIngreso" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalEquipoComputo">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalEquipoComputo">
+        <MappingFragment StoreEntitySet="SucursalEquipoComputo">
+          <ScalarProperty Name="idSucursalEquipoComputo" ColumnName="idSucursalEquipoComputo" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idEquipoComputo" ColumnName="idEquipoComputo" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalEstado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalEstado">
+        <MappingFragment StoreEntitySet="SucursalEstado">
+          <ScalarProperty Name="idSucursalEstado" ColumnName="idSucursalEstado" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalMoviliario">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalMoviliario">
+        <MappingFragment StoreEntitySet="SucursalMoviliario">
+          <ScalarProperty Name="idSucursalMoviliario" ColumnName="idSucursalMoviliario" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idMoviliario" ColumnName="idMoviliario" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalProveedor">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalProveedor">
+        <MappingFragment StoreEntitySet="SucursalProveedor">
+          <ScalarProperty Name="idSucursalProveedor" ColumnName="idSucursalProveedor" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SucursalPublicidad">
+      <EntityTypeMapping TypeName="RefaccionariaModel.SucursalPublicidad">
+        <MappingFragment StoreEntitySet="SucursalPublicidad">
+          <ScalarProperty Name="idSucursalPublicidad" ColumnName="idSucursalPublicidad" />
+          <ScalarProperty Name="idSucursal" ColumnName="idSucursal" />
+          <ScalarProperty Name="idPublicidad" ColumnName="idPublicidad" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAsentamiento">
+      <EntityTypeMapping TypeName="RefaccionariaModel.TipoAsentamiento">
+        <MappingFragment StoreEntitySet="TipoAsentamiento">
+          <ScalarProperty Name="idTipoAsentamiento" ColumnName="idTipoAsentamiento" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAsentamientoZona">
+      <EntityTypeMapping TypeName="RefaccionariaModel.TipoAsentamientoZona">
+        <MappingFragment StoreEntitySet="TipoAsentamientoZona">
+          <ScalarProperty Name="idTipoAsentamientoZona" ColumnName="idTipoAsentamientoZona" />
+          <ScalarProperty Name="idTipoAsentamiento" ColumnName="idTipoAsentamiento" />
+          <ScalarProperty Name="idZona" ColumnName="idZona" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAutoparte">
+      <EntityTypeMapping TypeName="RefaccionariaModel.TipoAutoparte">
+        <MappingFragment StoreEntitySet="TipoAutoparte">
+          <ScalarProperty Name="idTipoAutoparte" ColumnName="idTipoAutoparte" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEmpleado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.TipoEmpleado">
+        <MappingFragment StoreEntitySet="TipoEmpleado">
+          <ScalarProperty Name="idTipoEmpleado" ColumnName="idTipoEmpleado" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoProveedor">
+      <EntityTypeMapping TypeName="RefaccionariaModel.TipoProveedor">
+        <MappingFragment StoreEntitySet="TipoProveedor">
+          <ScalarProperty Name="idTipoProveedor" ColumnName="idTipoProveedor" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidoPaterno" ColumnName="apellidoPaterno" />
+          <ScalarProperty Name="apellidoMaterno" ColumnName="apellidoMaterno" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venta">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Venta">
+        <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="idFormaPago" ColumnName="idFormaPago" />
+          <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VentaEmpleado">
+      <EntityTypeMapping TypeName="RefaccionariaModel.VentaEmpleado">
+        <MappingFragment StoreEntitySet="VentaEmpleado">
+          <ScalarProperty Name="idVentaEmpleado" ColumnName="idVentaEmpleado" />
+          <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+          <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Zona">
+      <EntityTypeMapping TypeName="RefaccionariaModel.Zona">
+        <MappingFragment StoreEntitySet="Zona">
+          <ScalarProperty Name="idZona" ColumnName="idZona" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="estatus" ColumnName="estatus" />
+          <ScalarProperty Name="idUsuarioCrea" ColumnName="idUsuarioCrea" />
+          <ScalarProperty Name="fechaCrea" ColumnName="fechaCrea" />
+          <ScalarProperty Name="idUsuarioModifica" ColumnName="idUsuarioModifica" />
+          <ScalarProperty Name="fechaModifica" ColumnName="fechaModifica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

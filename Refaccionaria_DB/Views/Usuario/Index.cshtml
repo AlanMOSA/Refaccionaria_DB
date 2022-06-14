@@ -9,6 +9,11 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+<br />
+<a href="/Usuario/ExportListUsingEPPlus" class="btn btn-primary">Export to excel</a>
+<br />
+
 <table class="table">
     <tr>
         <th>
@@ -44,44 +49,45 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellidoPaterno)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.apellidoMaterno)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.correo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.clave)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.estatus)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fechaCrea)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.fechaModifica)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Usuario2.nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Usuario3.nombre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idUsuario }) |
-            @Html.ActionLink("Details", "Details", new { id=item.idUsuario }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idUsuario })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoPaterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoMaterno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.clave)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaCrea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaModifica)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario2.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario3.nombre)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idUsuario }) |
+                @Html.ActionLink("Details", "Details", new { id = item.idUsuario }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.idUsuario })
+            </td>
+        </tr>
+    }
 
 </table>
